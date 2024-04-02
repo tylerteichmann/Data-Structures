@@ -1,6 +1,3 @@
-import java.lang.reflect.InaccessibleObjectException;
-import java.util.Arrays;
-
 public class MyArrayList<T> {
     private Object[] elements;
     private int size;

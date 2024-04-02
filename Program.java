@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Program
@@ -7,8 +6,8 @@ import java.util.Arrays;
 public class Program {
 
     public static void main(String[] args) {
-        int[] arr = {1, 3, 4}    ;
-        int[] arr2 = new int[3];
+        // int[] arr = {1, 3, 4}    ;
+        // int[] arr2 = new int[3];
        
         // System.out.println(Arrays.toString(arr));
         // System.out.println(Arrays.toString(arr2));
@@ -19,7 +18,7 @@ public class Program {
         arrList.add(3);
         arrList.add(4);
 
-        ArrayList<Integer> arrayList2 = arrList;
+        // ArrayList<Integer> arrayList2 = arrList;
 
         // System.out.println(arrayList2);
 
