@@ -10,8 +10,8 @@ public class Program {
         int[] arr = {1, 3, 4}    ;
         int[] arr2 = new int[3];
        
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(arr2));
+        // System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(arr2));
         
         ArrayList<Integer> arrList = new ArrayList<Integer>();
 
@@ -21,37 +21,56 @@ public class Program {
 
         ArrayList<Integer> arrayList2 = arrList;
 
-        System.out.println(arrayList2);
+        // System.out.println(arrayList2);
 
-        MyArrayList myArrayList = new MyArrayList();
-        myArrayList.AddEnd(1);
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
+        System.out.println(myArrayList.Size());
         myArrayList.AddEnd(3);
-        myArrayList.AddEnd(5);
-        myArrayList.Print();
-        myArrayList.AddStart(4);
-        myArrayList.Print();
+        myArrayList.AddEnd(7);
+        myArrayList.AddEnd(1);
+        // myArrayList.Print();
+        myArrayList.AddStart(2);
+        // myArrayList.Print();
         myArrayList.AddAtIndex(300, 2);
-        myArrayList.Print();
+        // myArrayList.Print();
         myArrayList.AddAtIndex(800, -1);
-        myArrayList.Print();
+        // myArrayList.Print();
         myArrayList.AddAtIndex(900, 1000);
         myArrayList.Print();
-        myArrayList.GetAddress();
+        System.out.println(myArrayList.Size());
 
-        for (int i = 0; i < 10; i++){
-            myArrayList.AddEnd(0);
+        try {
+            myArrayList.DeleteAtIndex(3);
+            myArrayList.Print();
+            myArrayList.DeleteAtStart();
+            myArrayList.Print();
+            // check if its empty before we have cleared our elements
+            System.out.println(myArrayList.IsEmpty());
+            myArrayList.DeleteAtEnd();
+            myArrayList.Print();
+            System.out.println(myArrayList.Size());
+        } catch (Exception exception) {
+            System.out.println(exception);
         }
 
+        myArrayList.ClearAll();
         myArrayList.Print();
-        myArrayList.GetAddress();
+        System.out.println(myArrayList.Size());
+        // Check if its empty after we have cleared out our elements
+        System.out.println(myArrayList.IsEmpty());
 
-        // while (true) {
-            
-        // }
+        // System.out.println(myArrayList.GetElementAtIndex(1));
 
-        // int *test = 2f92e0f4;
+        MyArrayList<String> myStringList = new MyArrayList<String>();
+        myStringList.AddStart("Hello");
+        myStringList.AddEnd("World!");
+        myStringList.AddAtIndex("Beautiful", 1);
+        myStringList.Print();
+        System.out.println(myStringList.Size());
+        myStringList.DeleteAtEnd();
+        myStringList.Print();
+        myStringList.ClearAll();
+        myStringList.Print();
+
     }
-
-
-
 }
