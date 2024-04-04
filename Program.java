@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Program
  */
@@ -14,7 +12,9 @@ public class Program {
         myLinkedList.AddFront("It's me");
         System.out.println(myLinkedList);
         System.out.println(myLinkedList.Size());
-        System.out.println(myLinkedList.Get(1));
+        // myLinkedList.Insert(1, "I'm the sexy baby");
+        System.out.println(myLinkedList);
+        System.out.println(myLinkedList.Size());
 
         // // int[] arr = {1, 3, 4}    ;
         // // int[] arr2 = new int[3];

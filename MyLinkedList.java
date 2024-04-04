@@ -26,15 +26,9 @@ public class MyLinkedList<T> {
         size++;
     }
 
-    public void Insert(int index, T element) {
-        Node<T> currentNode = this.head;
-        
-        for(int i = 0; i < index; i++) {
-            currentNode = currentNode.next;
-        }
-
-
-    }
+    // public void Insert(int index, T element) {
+    //     Node<T> currentNode = this.head;
+    // }
 
     public T Get(int index) {
         Node<T> currentNode = this.head;
