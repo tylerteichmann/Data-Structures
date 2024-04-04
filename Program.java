@@ -8,11 +8,12 @@ public class Program {
     public static void main(String[] args) {
         MyLinkedList<String> myLinkedList = new MyLinkedList<String>();
 
-        myLinkedList.AddFront("World");
-        myLinkedList.AddFront("Hello");
-        myLinkedList.AddFront("This is me");
-        myLinkedList.AddFront("Hi");
+        myLinkedList.AddFront("it's me");
+        myLinkedList.AddFront("I'm the problem");
+        myLinkedList.AddFront("hi");
+        myLinkedList.AddFront("It's me");
         System.out.println(myLinkedList);
+        System.out.println(myLinkedList.Size());
 
         // // int[] arr = {1, 3, 4}    ;
         // // int[] arr2 = new int[3];
