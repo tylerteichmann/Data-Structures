@@ -14,6 +14,7 @@ public class Program {
         myLinkedList.AddFront("It's me");
         System.out.println(myLinkedList);
         System.out.println(myLinkedList.Size());
+        System.out.println(myLinkedList.Get(1));
 
         // // int[] arr = {1, 3, 4}    ;
         // // int[] arr2 = new int[3];
