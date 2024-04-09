@@ -6,15 +6,25 @@ public class Program {
     public static void main(String[] args) {
         MyLinkedList<String> myLinkedList = new MyLinkedList<String>();
 
-        myLinkedList.AddFront("it's me");
-        myLinkedList.AddFront("I'm the problem");
-        myLinkedList.AddFront("hi");
-        myLinkedList.AddFront("It's me");
+        myLinkedList.Append("It's Me");
+        myLinkedList.Append("hi");
+        myLinkedList.Append("I'm the problem");
+        myLinkedList.Append("it's me.");
         System.out.println(myLinkedList);
         System.out.println(myLinkedList.Size());
-        // myLinkedList.Insert(1, "I'm the sexy baby");
+        myLinkedList.Insert(2, "I'm the sexy baby");
         System.out.println(myLinkedList);
         System.out.println(myLinkedList.Size());
+        myLinkedList.DeleteFront();
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteBack();
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteNodeBasedOnValue("I'm the problem");
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteFront();
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteNodeBasedOnValue("I'm the sexy baby");
+        System.out.println(myLinkedList);
 
         // // int[] arr = {1, 3, 4}    ;
         // // int[] arr2 = new int[3];
