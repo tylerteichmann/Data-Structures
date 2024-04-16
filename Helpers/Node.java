@@ -1,4 +1,4 @@
-//Tyler J. Teichmann
+//Tyler.j.Teichmann
 
 // Node class for a doubly linked list.
 public class Node<T> {

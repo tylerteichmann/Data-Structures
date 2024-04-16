@@ -1,6 +1,5 @@
 // Tyler J. Teichmann
 
-// Public class for MyLinkedList
 public class MyLinkedList<T> {
 
     // Private Node to point to the head.
@@ -239,7 +238,7 @@ public class MyLinkedList<T> {
             // Add the element to the front of the list
             AddFront(element);
         // Else if the index is equal to the size of the list
-        } else if (index == this.size - 1 || index == -1) {
+        } else if (index == -1) {
             // Append the element to the end of the list
             Append(element);
         // Else
